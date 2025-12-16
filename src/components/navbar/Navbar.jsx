@@ -4,6 +4,7 @@ import { IoBag } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import { TbMenu4 } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
       <header className="fixed top-0 left-0 w-full z-50 bg-white">
         <nav className="max-w-[1400px] flex justify-between h-[14vh] items-center px-20 mx-auto">
           {/* logo */}
-          <a href="#" className="text-3xl">
+          <Link to="/" className="text-3xl">
             Gr<span className="text-orange-500 font-semibold">O</span>cify
-          </a>
+          </Link>
           {/* nav options */}
           <ul className="md:flex hidden gap-x-15">
             <li className="font-semibold hover:text-orange-400">
