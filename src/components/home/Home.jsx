@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import Hero from "../hero/Hero";
 import Heading from "../heading/Heading";
 import Card from "../card/Card";
@@ -11,7 +10,6 @@ import DiaryCat from "../../assets/Grocery Website Assets/dairy-and-eggs.png";
 import MeatCat from "../../assets/Grocery Website Assets/meat-and-seafood.png";
 import Process from "../process/Process";
 import Testimonial from "../testimonial/Testimonial";
-import Footer from "../footer/Footer";
 const Home = () => {
   const categories = [
     {
@@ -41,7 +39,6 @@ const Home = () => {
   ];
   return (
     <div className="flex flex-col gap-y-10 pt-[14vh]">
-      {/* <Navbar /> */}
       <Hero />
       <Heading highlight={"Shop "} normal={"by Category"} />
       <Card array={categories} />
@@ -50,7 +47,6 @@ const Home = () => {
       <Discount />
       <Process />
       <Testimonial />
-      {/* <Footer /> */}
     </div>
   );
 };
