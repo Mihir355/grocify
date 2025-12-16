@@ -24,7 +24,7 @@ import RicottaCheese from "../../assets/Grocery Website Assets/ricotta-cheese.pn
 import Grapes from "../../assets/Grocery Website Assets/grapes.png";
 import Lettuce from "../../assets/Grocery Website Assets/lettuce.png";
 import { FaHeart, FaPlus } from "react-icons/fa";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../button/Button";
 
 const ProductList = ({ categories }) => {
@@ -210,7 +210,7 @@ const ProductList = ({ categories }) => {
   const [bagItems, setBagItems] = useState([]);
   const [visibleCount, setVisibleCount] = useState(8);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setVisibleCount(8);
   }, [categories]);
 
