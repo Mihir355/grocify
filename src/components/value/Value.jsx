@@ -45,7 +45,10 @@ const Value = () => {
         <div className="flex flex-col flex-1 gap-y-10 justify-between md:pt-15 md:pb-15 pt-5 pb-5">
           {features.slice(0, 2).map((item) => {
             return (
-              <div className="flex gap-x-5 md:justify-end mx-auto">
+              <div
+                className="flex gap-x-5 md:justify-end mx-auto"
+                key={item.id}
+              >
                 <div className="flex flex-col gap-y-1">
                   <span className="font-semibold text-2xl md:flex md:justify-end">
                     {item.title}
@@ -69,7 +72,7 @@ const Value = () => {
         <div className="md:flex md:flex-col md:flex-1 md:gap-y-10 md:justify-between md:pt-15 md:pb-15 hidden">
           {features.slice(2, 4).map((item) => {
             return (
-              <div className="flex gap-x-5">
+              <div className="flex gap-x-5" key={item.id}>
                 <div className="flex flex-col justify-center">
                   <div className="text-white text-2xl bg-orange-500 rounded-full h-11 w-11 flex justify-center items-center">
                     {item.image}
@@ -87,7 +90,10 @@ const Value = () => {
         <div className="flex flex-col flex-1 gap-y-10 justify-between md:pt-15 md:pb-15 pt-5 pb-5 md:hidden">
           {features.slice(2, 4).map((item) => {
             return (
-              <div className="flex gap-x-5 md:justify-end mx-auto">
+              <div
+                className="flex gap-x-5 md:justify-end mx-auto"
+                key={item.id}
+              >
                 <div className="flex flex-col gap-y-1">
                   <span className="font-semibold text-2xl md:flex md:justify-end">
                     {item.title}
